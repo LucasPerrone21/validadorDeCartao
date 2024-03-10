@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/cartao-de-credito.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Montserrat&display=swap" rel="stylesheet">
+    <script src="./script.js" type="module" defer></script>
+    <title>Validador de Cartão</title>
+</head>
+
+<body>
+    <h1>Validador de Cartão de Crédito</h1>
+    <main class="principal">
+
+        <div class="cartao">
+            <div class="chipCartao"></div>
+            <p class="numeroCartao">0000 0000 0000 0000</p>
+            <img class="bandeira" src="./img/amex.png" alt="logo do cartão">
+        </div>
+        <form class="formulario">
+            <label for="numeroCartao">Insira o número do cartão:</label>
+            <input type="text" id="numeroCartao" placeholder="Número do Cartão" required>
+            <button id="botao">Validar</button>
+        </form>
+
+        <span class="resultado"></span>
+
+        <section class="explicacao">
+
+            <p>Recomendo <b>não utilizar seu proprio cartão de crédito</b>, use a ferramenta de geração de cartão de crédito <a href="https://www.4devs.com.br/gerador_de_numero_cartao_credito" target="_blank" rel="noopener noreferrer">da 4Devs</a>. Bandeiras suportadas:</p>
+            <ul>
+                <li>Visa</li>
+                <li>MasterCard</li>
+                <li>American Express</li>
+                <li>HiperCard</li>
+                <li>Discover</li>
+                <li>Dinners Club</li>
+                <li>JCB</li>
+                <li>ELO</li>
+            </ul>
+            <p>A validação do cartão por meio do Algoritmo de Luhn é um procedimento essencial para garantir a integridade dos dados fornecidos durante transações financeiras. Este algoritmo, desenvolvido pelo matemático Hans Peter Luhn na década de 1950, verifica a validade de um número de cartão de crédito ou débito através de um cálculo simples que confere se o número inserido segue um padrão específico.</p>
+            <p> Ao aplicar o Algoritmo de Luhn, o sistema consegue detectar erros comuns de digitação ou fraudes potenciais, proporcionando uma camada adicional de segurança nas transações eletrônicas. Essa validação é fundamental para evitar transações inválidas ou fraudulentas, garantindo a precisão e a confiabilidade dos dados utilizados no processo de pagamento</p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2024 <a href="https://lucasperrone21.github.io/Portfolio/" target="_blank">Lucas Perrone.</a> Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
